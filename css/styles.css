@@ -910,13 +910,6 @@ margin-left: 24px;
 }
 /* Data modal section */
 
-
-
-
-.input-container {
-  position: relative;
-}
-
 .input {
   padding-right: 20px; /* Adjust this value as needed */
 }
@@ -937,12 +930,7 @@ margin-left: 24px;
   margin-bottom: 8px;
 }
 
-.input-container:focus{
-  border: 1px solid var(--iris);
-  
-  border-radius: 4px;
 
-}
 #name{
   width: 360px;
 height: 40px;
@@ -1015,7 +1003,7 @@ margin-left: 8px;
 height: 56px;
 top: 584px;
 left: 635px;
-padding: 16px, 32px, 16px, 32px;
+padding: 16px 32px;
 border-radius: 4px;
 gap: 10px;
 color: var(--white);

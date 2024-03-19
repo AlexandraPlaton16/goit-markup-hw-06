@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <>
     <header class="global-header">
       <section class="nav-section">
         <div class="container">
@@ -63,74 +63,62 @@
         <button class="close-btn" data-modal-close>&times;</button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <div class="modal-input">
-          <form>
+          <form action="/submit-form" method="post">
             <div class="label-input">
               <label for="name">Name</label>
-              <div class="input-container">
-                <input class="input" type="text" id="name" name="name" />
-                <div class="icon-container">
-                  <!-- SVG icon code goes here -->
-                  <!-- Example: -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="30"
-                    height="30"
-                  >
-                    <path
-                      fill="#4D5AE5"
-                      d="M6 6a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.002 0-6 1.005-6 3v.75c0 .412.338.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"
-                    />
-                  </svg>
-                </div>
+              <input class="input" type="text" id="name" name="name" />
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                >
+                  <path
+                    fill="#4D5AE5"
+                    d="M6 6a3 3 0 1 0 0-6 3 3 0 1 0 0 6Zm0 1.5c-2.002 0-6 1.005-6 3v.75c0 .412.338.75.75.75h10.5c.412 0 .75-.338.75-.75v-.75c0-1.995-3.998-3-6-3Z"
+                  />
+                </svg>
               </div>
             </div>
 
             <div class="label-input">
               <label for="phone">Phone</label>
-              <div class="input-container">
-                <input class="input" type="tel" id="tel" name="tel" />
-                <div class="icon-container">
-                  <!-- SVG icon code goes here -->
-                  <!-- Example: -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="30"
-                    height="30"
-                  >
-                    <path
-                      fill="#2E2F42"
-                      d="m11.726 8.865-1.838-.21a1.44 1.44 0 0 0-1.187.413L7.37 10.399A10.888 10.888 0 0 1 2.6 5.63l1.34-1.339a1.44 1.44 0 0 0 .412-1.186l-.21-1.824A1.448 1.448 0 0 0 2.702 0H1.45C.632 0-.048.68.003 1.498c.383 6.18 5.326 11.116 11.499 11.5.818.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.433Z"
-                    />
-                  </svg>
-                </div>
+              <input class="input" type="tel" id="tel" name="tel" />
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                >
+                  <path
+                    fill="#2E2F42"
+                    d="m11.726 8.865-1.838-.21a1.44 1.44 0 0 0-1.187.413L7.37 10.399A10.888 10.888 0 0 1 2.6 5.63l1.34-1.339a1.44 1.44 0 0 0 .412-1.186l-.21-1.824A1.448 1.448 0 0 0 2.702 0H1.45C.632 0-.048.68.003 1.498c.383 6.18 5.326 11.116 11.499 11.5.818.05 1.498-.63 1.498-1.448v-1.252a1.434 1.434 0 0 0-1.274-1.433Z"
+                  />
+                </svg>
               </div>
             </div>
 
             <div class="label-input">
               <label for="email">Email</label>
-              <div class="input-container">
-                <input class="input" type="email" id="email" name="email" />
-                <div class="icon-container">
-                  <!-- SVG icon code goes here -->
-                  <!-- Example: -->
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="30"
-                    height="30"
-                  >
-                    <path
-                      fill="#2E2F42"
-                      d="M14 0H2C1.175 0 .507.675.507 1.5l-.007 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9C15.5.675 14.825 0 14 0Zm-.3 3.188L8.398 6.502a.759.759 0 0 1-.795 0L2.3 3.187a.637.637 0 1 1 .675-1.08L8 5.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"
-                    />
-                  </svg>
-                </div>
+              <input class="input" type="email" id="email" name="email" />
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                >
+                  <path
+                    fill="#2E2F42"
+                    d="M14 0H2C1.175 0 .507.675.507 1.5l-.007 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9C15.5.675 14.825 0 14 0Zm-.3 3.188L8.398 6.502a.759.759 0 0 1-.795 0L2.3 3.187a.637.637 0 1 1 .675-1.08L8 5.25l5.025-3.143a.637.637 0 1 1 .675 1.08Z"
+                  />
+                </svg>
               </div>
             </div>
             <div class="label-input">
-              <label for="comment">Comment</label> <br />
+              <label for="comment">Comment</label>
               <textarea
                 class="input"
                 id="comment"
@@ -140,18 +128,23 @@
                 placeholder="Text input"
               ></textarea>
             </div>
-          </form>
         </div>
-        <span class="privacy">
-          <input type="checkbox" id="privacy" name="privacypolicy" />
-          <p class="privacy-text">
-            I accept the terms and conditions of the
-            <span class="privacy-policy">Privacy Policy</span>
-          </p>
-        </span>
-        <button class="send" type="send">Send</button>
+<div class="label-input">
+  <span class="privacy">
+    <input type="checkbox" id="privacy" name="privacypolicy" />
+    <p class="privacy-text">
+      I accept the terms and conditions of the
+      <span class="privacy-policy">Privacy Policy</span>
+    </p>
+  </span>
+  <button class="send" type="submit">Send</button>
+</div>
+      
+      </form>
+
       </div>
     </div>
+ 
     <!-- Main Section -->
     <main class="main-page">
       <!-- Hero Section -->

@@ -846,13 +846,12 @@ background-color:  var(--navy-blue);
 /* Footers */
 
 
-
 /* Data modal */
-.is-hidden{
-  visibility: hidden;
+.is-hidden {
+  display: none; /* Hide the modal by default */
 }
 
-.modal{
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -861,182 +860,90 @@ background-color:  var(--navy-blue);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #2E2F4266;
-
+  background: rgba(46, 47, 66, 0.4); /* Semi-transparent background */
 }
 
-.modal-content{
-  margin: 0 auto;
-  padding: 16px;
-  background-color: var(--dairy);
-  width: 408px;
-  height: 608px;
-  position: relative;
+.modal-content {
+  background-color: #ffffff; /* White background for modal content */
+  width: 400px; /* Adjust width as needed */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
-.modal-text{
-  width: 360px;
-height: 24px;
-top: 152px;
-left: 540px;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.02em;
-text-align: center;
-color: var(--navy-blue);
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 72px;
-margin-left: 24px;
-
-
-
-
+.modal-text {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.modal-input{
+
+.modal-input {
+  margin-bottom: 20px;
+}
+
+.modal-input label {
   display: block;
-  width: Fixed (360px);
-height: Hug (336px);
-top: 192px;
-left: 540px;
-border-radius: 4px;
-gap: 8px;
-margin-top: 16px;
-margin-left: 24px;
-
-}
-/* Data modal section */
-
-.input {
-  padding-right: 20px; /* Adjust this value as needed */
+  margin-bottom: 6px;
 }
 
 .icon-container {
-  position: absolute;
-  padding: 14px 345px 35px 19px ; /* Adjust this value as needed */
-  transform: translateY(-50%);
-}
-.icon-container:focus{
-  fill: #31d0aa;
-}
-.input:focus + .icon-container svg {
-  fill: #31d0aa; /* Change color on focus */
-}
-
-.label-input{
-  margin-bottom: 8px;
-}
-
-
-#name{
-  width: 360px;
-height: 40px;
-top: 18px;
-border: 1px solid var(--navy-blue);
-  border-radius: 4px;
-}
-
-#tel{
-  width: 360px;
-  height: 40px;
-  top: 18px;
-  border: 1px solid var(--navy-blue);
-  border-radius: 4px;
-}
-#email{
-  width: 360px;
-  height: 40px;
-  top: 18px;
-  border: 1px solid var(--navy-blue);
-  border-radius: 4px;
-}
-#comment{
-  width: 360px;
-height: 120px;
-top: 216px;
-border: 1px solid var(--navy-blue);
-  border-radius: 4px;
-}
-
-#privacy{
-  width: 16px;
-height: 16px;
-border-radius: 2px;
-border: 1px solid var(--navy-blue);
-margin-left: 24px;
-
-}
-.privacy-text{
-  width: 338px;
-height: 16px;
-
-
-font-family: Roboto;
-font-size: 12px;
-font-weight: 400;
-line-height: 16px;
-letter-spacing: 0.04em;
-text-align: left;
-
-
-font-family: Roboto;
-font-size: 12px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0.04em;
-text-align: left;
-margin-left: 8px;
-}
-.privacy-policy{
-  color: var(--iris);
-  text-decoration: underline;
-}
-.privacy-policy:hover{
-  cursor: pointer;
-}
-
-.send{
-  width: 169px;
-height: 56px;
-top: 584px;
-left: 635px;
-padding: 16px 32px;
-border-radius: 4px;
-gap: 10px;
-color: var(--white);
-background-color: var(--iris);
-margin: 24px 120px 24px 119px;
-border: var(--iris);
-}
-.send:hover{
-  cursor: pointer;
-}
-.close-btn{
-  background-color: var(--cornflower);
-  border-radius: 50%;
-  color: var(--navy-blue);
-  border-color: var(--light-slate);
-  outline: none;
-  position: absolute;
-  margin-top: 24px;
-  right: 24px;
-  margin-bottom: 24px;
-}
-
-.close-btn:active{
-  background-color: var(--ocean);
-  border-radius: 50%;
-  color: var(--white);
-  border-color: var(--ocean);
-  outline: none;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-.privacy{
   display: flex;
+  align-items: center; /* Align items vertically */
+  position: relative;
+  margin-left: -30px; /* Adjust this value to move the icon container to the left */
 }
-/* Data modal */
+
+.icon-container svg {
+  width: 20px; /* Adjust the width of the icon as needed */
+  height: 20px; /* Adjust the height of the icon as needed */
+  margin-right: 10px; /* Adjust this value to add space between the icon and input */
+}
+
+.modal-input input,
+.modal-input textarea {
+  width: calc(100% - 40px); /* Adjust width to accommodate the icon container */
+  padding-right: 40px; /* Space for the icon container */
+}
+
+
+.privacy {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.privacy input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.privacy-text {
+  font-size: 14px;
+}
+
+.send {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send:hover {
+  background-color: #3f4bc7;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
